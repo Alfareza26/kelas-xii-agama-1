@@ -3,7 +3,7 @@ import { useInView, Title, Arrow } from "../components/InkOrbitTemplate.jsx";
 import { galleryPhotos } from "../data/students.js";
 import { Modal, usableSrc } from "./shared.jsx";
 
-export const CATEGORY = { trip: "Perjalanan", event: "Acara", daily: "Keseharian" };
+export const CATEGORY = { event: "Acara", daily: "Keseharian" };
 const FILTERS = [{ key: "all", label: "Semua" }, ...Object.entries(CATEGORY).map(([key, label]) => ({ key, label }))];
 // Pola tata letak saat semua foto tampil: 1 besar, 1 lebar, sisanya persegi (total 16 sel).
 const SPAN = { 0: "big", 5: "wide" };

@@ -3,3 +3,90 @@ html, body { margin: 0; padding: 0; background: #efefef; }
 html.dark, html.dark body { background: #0b0b0b; }
 body { min-height: 100svh; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+/* Student Modal Styling & Spacing */
+.yb-dialog {
+  width: min(620px, calc(100vw - 32px)) !important;
+  border-radius: 8px !important;
+  overflow: hidden !important;
+}
+.yb-close {
+  position: absolute !important;
+  top: 12px !important;
+  right: 12px !important;
+  z-index: 10 !important;
+  background: var(--nf-paper) !important;
+}
+.yb-mod {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) !important;
+  background: var(--nf-paper) !important;
+}
+@media (min-width: 600px) {
+  .yb-mod {
+    grid-template-columns: 240px 1fr !important;
+  }
+}
+.yb-mod .yb-ph {
+  position: relative !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 260px !important;
+  aspect-ratio: auto !important;
+  background: var(--nf-band) !important;
+  border-right: 1px solid var(--nf-line) !important;
+}
+.yb-mod .yb-ph img {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  filter: grayscale(1) !important;
+}
+.yb-mod-copy {
+  padding: 28px 28px 20px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+  min-height: 260px !important;
+  box-sizing: border-box !important;
+}
+.yb-mod-copy h3 {
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.02em !important;
+  line-height: 1.25 !important;
+  margin: 0 !important;
+  padding-right: 36px !important;
+  color: var(--nf-ink) !important;
+}
+.yb-nick {
+  font-size: 12.5px !important;
+  color: var(--nf-muted) !important;
+  margin-top: 4px !important;
+}
+.yb-quote {
+  font-family: var(--nf-serif) !important;
+  font-size: 15px !important;
+  line-height: 1.6 !important;
+  letter-spacing: -0.005em !important;
+  color: var(--nf-soft) !important;
+  font-style: italic !important;
+  margin: 14px 0 20px 0 !important;
+}
+.yb-pager {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 12px !important;
+  margin-top: auto !important;
+  padding-top: 14px !important;
+  border-top: 1px solid var(--nf-line) !important;
+  font-size: 12.5px !important;
+  color: var(--nf-muted) !important;
+}
+.yb-pager div {
+  display: flex !important;
+  gap: 6px !important;
+}
