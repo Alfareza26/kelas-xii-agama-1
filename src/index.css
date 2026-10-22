@@ -1,0 +1,5 @@
+html { scroll-behavior: smooth; }
+html, body { margin: 0; padding: 0; background: #efefef; }
+html.dark, html.dark body { background: #0b0b0b; }
+body { min-height: 100svh; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
